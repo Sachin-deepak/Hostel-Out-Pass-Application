@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hostel Pass Application</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Hostel Pass Application</h1>
+    <form id="passForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br>
+        <label for="reason">Reason:</label>
+        <textarea id="reason" name="reason" required></textarea><br>
+        <button type="submit">Apply for Pass</button>
+    </form>
+
+    <h2>All Passes</h2>
+    <ul id="passesList"></ul>
+
+    {% if role == 'admin' %}
+    <h2>Admin Actions</h2>
+    {% endif %}
+
+    <script>
+        const isAdmin = {{ 'true' if role == 'admin' else 'false' | tojson }};
+    </script>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+    <a href="{{ url_for('logout') }}">Logout</a>
+</body>
+</html>
