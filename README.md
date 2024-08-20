@@ -8,6 +8,7 @@ User Login: Users can log in to the system to apply for hostel passes.
 Pass Application Form: Users can fill out a form to apply for a pass, providing their name and the reason for the request.
 Pass Management: The application lists all submitted pass requests, allowing administrators to approve or reject them.
 Admin Actions: Administrators have special privileges to manage and update the status of pass requests.
+
 #Technologies Used:
 
 HTML/CSS: For structuring and styling the web pages.
