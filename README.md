@@ -14,6 +14,7 @@ HTML/CSS: For structuring and styling the web pages.
 JavaScript: For handling user interactions and AJAX requests.
 Python (Flask): For backend logic and routing.
 Jinja: For rendering templates dynamically based on user roles.
+
 #File Structure:
 
 index.html: The main page where users can apply for passes and view existing requests​(index).
